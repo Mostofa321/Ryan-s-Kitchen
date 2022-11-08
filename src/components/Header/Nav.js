@@ -5,7 +5,7 @@ const Nav = () => {
         <nav className="navbar navbar-expand-lg bg-white container-fluid py-3 fixed-top ">
             <div className="container ">
                 <div>
-                    <a className="navbar-brand fs-1 fw-semibold" href="#">Ryan's Kitchen</a>
+                    <a className="navbar-brand fs-1 fw-semibold" href="#"> <span><i className="fa-solid fa-utensils"></i></span> Ryan's Kitchen</a>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
