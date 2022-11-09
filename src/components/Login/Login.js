@@ -22,7 +22,7 @@ const Login = () => {
                 <h3 className=''>or</h3>
                 <hr className=' ms-2' style={{ border: "1px solid", width: "45%", height: "1px" }} />
             </div>
-            <p className='mt-5'><small className='me-3'>dont have an account yet?</small><Link to='/'>Sign Up</Link></p>
+            <p className='mt-5'><small className='me-3'>dont have an account yet?</small><Link to='/signUp'>Sign Up</Link></p>
         </div>
     );
 };

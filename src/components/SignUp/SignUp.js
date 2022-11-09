@@ -24,7 +24,7 @@ const SignUp = () => {
                 } */}
 
                 <button type="submit" className="btn btn-primary w-100">Sign Up</button>
-                <p className='mt-5'><small className='me-3'>Already have an account?</small><Link to='/'>Sign In</Link></p>
+                <p className='mt-5'><small className='me-3'>Already have an account?</small><Link to='/login'>Sign In</Link></p>
             </form>
         </div>
     );
