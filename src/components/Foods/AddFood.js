@@ -14,7 +14,11 @@ const AddFood = () => {
             body: JSON.stringify(fieldValue)
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                if(data.insertedId){
+                    return    alert('Food Added Successfully')
+                };
+            })
             .catch(err => console.log(err));
         e.target.reset();
     };

@@ -30,9 +30,6 @@ const Nav = () => {
                             <Link to='/' className="nav-link fs-5" aria-current="page" >Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/foods' className="nav-link mx-3 fs-5" >Fods</Link>
-                        </li>
-                        <li className="nav-item">
                             <Link to='/blog' className="nav-link mx-3 fs-5" >Blog</Link>
                         </li>
                         {
