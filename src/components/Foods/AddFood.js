@@ -33,8 +33,8 @@ const AddFood = () => {
         console.log(newFieldValue);
     }
     return (
-        <div className='pt-5'>
-            <form onSubmit={handleSubmit} className='mx-auto p-5 form' style={{ width: "500px", boxShadow: "rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px" }}>
+        <div className='pt-5 row container mx-auto'>
+            <form onSubmit={handleSubmit} className='mx-auto p-5 form col-12 col-md-5 ' style={{  boxShadow: "rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px" }}>
                 <h2 className='mb-4'>Add Food</h2>
                 <div className="mb-3">
                     <input onBlur={handleBlur} type="text" name='name' className="form-control" placeholder='Food Name' id="exampleInputText" aria-describedby="textHelp" />
