@@ -2,6 +2,9 @@ import React, { useContext, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../contexts/UserContexts';
 import Reviews from './Reviews';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const FoodDetails = () => {
     const { user } = useContext(AuthContext);
@@ -22,7 +25,7 @@ const FoodDetails = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    return alert('Review Added Successfully')
+                    return toast("Review Added Successfully!")
                 };
             })
             .catch(err => console.log(err));
@@ -89,6 +92,7 @@ const FoodDetails = () => {
                 }
 
             </div>
+            <ToastContainer />
         </>
     );
 };

@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
 
-const MyReview = ({ Review }) => {
-    const delet = (id) => {
-        // console.log('delet button clicked', user._id);
-        fetch(`https://assignment-11-server-phi-rosy.vercel.app/myReview/${id}`, {
-            method: "DELETE"
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-            })
-            .catch(err => console.log(err));
-    }
+const MyReview = ({ Review, delet }) => {
+ 
     // console.log(Review);
     const { foodName, review, reviewerName, reviewerPhoto, reviwerEmail, _id, foodId } = Review;
     return (

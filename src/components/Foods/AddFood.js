@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -16,7 +18,7 @@ const AddFood = () => {
             .then(res => res.json())
             .then(data => {
                 if(data.insertedId){
-                    return    alert('Food Added Successfully')
+                    return toast("Food Added Successfully!")
                 };
             })
             .catch(err => console.log(err));
@@ -51,6 +53,7 @@ const AddFood = () => {
                 </div>
                 <button type="submit" className="btn btn-primary mt-3 w-100">Add Food</button>
             </form>
+            <ToastContainer />
         </div>
     );
 };
