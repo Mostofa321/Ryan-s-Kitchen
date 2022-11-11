@@ -3,6 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 import AboutMe from '../AboutMe/AboutMe';
 import Contact from '../contact/Contact';
 import Food from '../Foods/Food';
+import Footer from '../Footer/Footer';
 
 
 const Home = () => {
@@ -33,6 +34,9 @@ const Home = () => {
             <div className='mb-5'>
                 <h1 className='text-center'>GET IN TOUCH</h1>
                 <Contact />
+            </div>
+            <div>
+                <Footer/>
             </div>
         </>
     );
