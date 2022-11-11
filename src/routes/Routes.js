@@ -7,6 +7,7 @@ import Home from '../components/Home/Home';
 import Login from '../components/Login/Login';
 import SignUp from '../components/SignUp/SignUp';
 import Main from '../layouts/Main';
+import MyReviews from '../myReviews/MyReviews';
 import PrivateRoute from './PrivateRoute'
 
 
@@ -18,17 +19,17 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home/>,
-                loader: () => fetch('http://localhost:5000/food?home=home')
+                loader: () => fetch('https://assignment-11-server-phi-rosy.vercel.app/food?home=home')
             },
             {
                 path: '/foods',
                 element: <Foods/>,
-                loader: () => fetch('http://localhost:5000/food')
+                loader: () => fetch('https://assignment-11-server-phi-rosy.vercel.app/food')
             },
             {
                 path: '/foods/:id',
                 element: <FoodDetails/>,
-                loader: ({params}) => fetch(`http://localhost:5000/food/${params.id}`)
+                loader: ({params}) => fetch(`https://assignment-11-server-phi-rosy.vercel.app/food/${params.id}`)
             },
             {
                 path: 'blog',
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
             {
                 path:'/addFood',
                 element: <PrivateRoute><AddFood/></PrivateRoute>
+            },
+            {
+                path: '/myReviews',
+                element:<PrivateRoute><MyReviews/></PrivateRoute>
             }
         ]
     }

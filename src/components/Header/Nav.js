@@ -39,7 +39,7 @@ const Nav = () => {
                                     <Link to='/addFood' className="nav-link mx-3 fs-5" >Add Food</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to='/blog' className="nav-link mx-3 fs-5" >My reviews</Link>
+                                    <Link to='/myReviews' className="nav-link mx-3 fs-5" >My reviews</Link>
                                 </li>
                             </>
 

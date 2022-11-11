@@ -6,7 +6,7 @@ const AddFood = () => {
     const [fieldValue, setFieldValue] = useState({})
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:5000/food', {
+        fetch('https://assignment-11-server-phi-rosy.vercel.app/food', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
