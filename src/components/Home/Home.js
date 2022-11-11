@@ -35,9 +35,7 @@ const Home = () => {
                 <h1 className='text-center'>GET IN TOUCH</h1>
                 <Contact />
             </div>
-            <div>
-                <Footer/>
-            </div>
+            
         </>
     );
 };
